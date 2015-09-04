@@ -16,10 +16,11 @@ Package.onUse(function(api) {
   // External packages
   api.use('coffeescript');
   api.use('check');
+  api.use('mongo');
   api.use('aldeed:collection2');
 
   // Package files
-  api.use('server.coffee', 'server');
+  api.addFiles('server.coffee', 'server');
 });
 
 Package.onTest(function(api) {

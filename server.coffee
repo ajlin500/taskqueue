@@ -63,9 +63,10 @@ processTaskQueue = (doc) ->
         validate: false
 
     catch error
-      tryAgain = Meteor.call 'taskQueue.getTryAgain', error
+      tryAgain = Meteor.call 'taskQueue.getTryAgain', task, error
       isDate = Match.test tryAgain, Date
       if isDate
+        console.log "Task Failed: Trying again in #{tryAgain.getTime()}"
         # Set try again time
         TaskQueue.update
           _id: doc._id
