@@ -17,7 +17,7 @@ Package.onUse(function(api) {
   api.use('coffeescript');
   api.use('check');
   api.use('mongo');
-  api.use('aldeed:collection2');
+  api.use('aldeed:collection2@2.5.0');
 
   // Package files
   api.addFiles('server.coffee', 'server');
