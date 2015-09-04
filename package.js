@@ -25,7 +25,7 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('sanjo:jasmine@0.16.4');
-  api.use('taskqueue');
+  api.use('andrew:taskqueue');
 
   api.addFiles('server.spec.coffee', 'server');
 });
