@@ -2,7 +2,7 @@ Package.describe({
   name: 'andrew:taskqueue',
   version: '0.0.1',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'A task queue for dealing with rate limited APIs',
   // URL to the Git repository containing the source code for this package.
   git: '',
   // By default, Meteor will default to using README.md for documentation.
